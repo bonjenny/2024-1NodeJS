@@ -10,8 +10,8 @@ const port = 3000;
 // 시험문제는  require, http 이런 거 빈칸문제
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
-  res.setHeader("Content-Type", "text/plain"); // 글자 그대로 text로 출력
-  res.setHeader("Content-Type", "text/plain"); // 태그가 적용이 되어 출력
+//   res.setHeader("Content-Type", "text/plain"); // 글자 그대로 text로 출력
+  res.setHeader("Content-Type", "text/html"); // 태그가 적용이 되어 출력
   res.write("<h1>Hello, </h1>");
   res.end("World!\n"); // 마지막 문장은 무조건 end로 끝나야 한다. res.end()로도 가능.
   console.log("요청 발생");
