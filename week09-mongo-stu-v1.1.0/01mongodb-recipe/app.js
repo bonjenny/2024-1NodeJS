@@ -11,6 +11,7 @@ const express = require("express"),
   dbURL = "mongodb://127.0.0.1:27017",
   dbName = "recipe_db";
 
+// 콜백함수가 6버전에서는 안돌아ㅏㅁ
 MongoDB.connect(
   dbURL,
   {useUnifiedTopology:true},
